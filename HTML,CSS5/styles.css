@@ -1,0 +1,70 @@
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+h4 {
+    margin: 10px;
+}
+.background {
+  background-image: url(ball1.gif);
+  background-position: top right;
+}
+img {
+  width: 250px;
+  height: auto;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+p {
+  font-size: large;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.header {
+  text-align: center;
+  background-color: rgb(211, 211, 153);
+  padding: 20px;
+  margin-bottom: 0;
+}
+.content1 {
+  background-image: url(p1.png);
+  background-repeat: repeat-y;
+  background-size: 200px;
+  background-position: 0px 0;
+}
+.menu {
+  font-size: 20px;
+  float: left;
+  width: 200px;
+  background-color: rgb(149, 149, 185);
+  margin-right: 20px;
+}
+.banner {
+  float: right;
+  width: 52px;
+  height: 200px;
+}
+.content {
+  margin-left: 200px;
+  margin-right: 50px;
+  background-color: rgb(255, 255, 255);
+}
+.rasp {
+    background-size: auto; 
+    clear: both;
+}
+.footer {
+  text-align: center;
+  font-weight: 900;
+  background-color: rgb(227, 165, 165);
+  line-height: 60px;
+  clear: both;
+}
