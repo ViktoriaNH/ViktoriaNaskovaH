@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.menu {
+    width: 20%;
+    height: 400px;
+    background-color: rgb(41, 31, 18);
+    float: left;
+    background: url(bigball.png), url(bigball.png), url(bigball.png), url(bigball.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+}
+.banner {
+    width: 200px;
+    height: 400px;
+    background-color: rgb(152, 152, 197);
+    float: right; 
+    background: url(bigball.png), url(bigball.png), url(bigball.png), url(bigball.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    
+}
+.content {
+    height: 400px;
+    background-color: rgb(135, 190, 172);
+    margin-left: 20%;
+    margin-right: 200px;
+    background-image: url(bigball.png), url(bigball.png), url(bigball.png), url(bigball.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+}
+.rasp {
+    background-size: auto; 
+    clear: both;
+}
+.container {
+    background-color: rgb(152, 152, 197);
+}
+.content1 {
+    background-image: url(pol1.png);
+    background-repeat: repeat-y;
+    background-size: 20%;
+    background-position: 0px 0;
+}

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    padding-bottom: 300px;
+    background: url(./img/people.png) no-repeat top right, 
+                url(./img/Rectangle\ 10.png) repeat-x;
+}
+.container {
+    width: 1441px;
+    margin: 0 auto;
+}
+.first {
+    width: 22;
+    height: 33;
+    float: left;
+    margin-left: 80px;
+}
+.top {
+    font: bold 30px 'Libre Franklin';
+    vertical-align: 10px;
+    float: left;
+    padding-left: 8px;
+}
+ul {
+    margin-top: 6px;
+    margin-left: 272px;
+    list-style-type: none;
+    float: left;
+}
+li {
+    font: 600 20px 'Libre Franklin';
+    font-variant: small-caps;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.side1 {
+    float: left;
+    margin-top: 42px;
+}
+.side2 {
+    float: right;
+    margin-top: 42px;
+}
+.rasp {
+    background-size: auto; 
+    clear: both;
+}
+.tap {
+    background-color: rgba(155, 61, 61, 0.574);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h1 {
+    font: bold 70px 'Libre Franklin';
+    margin-left: 80px;
+    margin-top: 195px;
+}
+.text {
+    width: 481px;
+    height: 122px;
+    margin-left: 80px;
+    margin-top: 195px;
+}
+p {
+    font: 400 18px 'Libre Franklin';
+    margin-left: 80px;
+    margin-top: 24px;
+    margin-bottom: 34px;
+}
+.button {
+    background-color: #0033FF;
+    margin-left: 80px;
+    margin-top: 34px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: aliceblue;
+    font: 600 20px 'Libre Franklin';
+    font-variant: small-caps;
+}
+.text2 {
+    margin-left: 669;
+    font-variant: small-caps;
+    font-weight: 700;
+}
+.partners {
+    width: 1441px;
+    margin-left: 500px;
+    text-align: center;
+    width: 1052px;
+    height: 101;
+}
+.player {
+    width: 1441px;
+    margin: 0 auto;
+}
+.player {
+    margin-left: 700px;
+}
+.sounds {
+    font: 600 30px 'Libre Franklin';
+    font-variant: small-caps;
+    text-align: center;
+}
