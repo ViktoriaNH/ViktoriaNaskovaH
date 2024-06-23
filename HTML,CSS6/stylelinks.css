@@ -1,0 +1,40 @@
+body {
+    font-size: 30px;
+}
+
+.first a {
+    vertical-align: 20px;
+    margin-inline: 70px;
+}
+[href]:hover {
+    color: red;
+}
+.two li {
+    display: inline;
+    margin: 0 40px 0 40px;
+}
+.two a:hover {
+    color: red;
+}
+.two li:after {
+    content: "|";
+    color: red;
+    display: inline-block;
+    vertical-align:top;
+    padding-left: 70px;
+}
+.three span {
+    margin-inline: 50px;
+} 
+.three span {
+    color: red;
+}
+.four {
+    margin-top: 30px;
+}
+.four span {
+    margin-inline: 20px;
+    padding-left: 30px;
+    padding-right: 70px;
+    border-right: 8px solid red;
+}
