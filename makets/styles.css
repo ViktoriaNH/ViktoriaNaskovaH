@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: auto;
 }
 .header {
+    width: auto;
     padding-bottom: 300px;
-    background: url(./img/people.png) no-repeat top right, 
-                url(./img/Rectangle\ 10.png) repeat-x;
+    background: url(./img/people.png) no-repeat top right;
+                url(./img/back1.png) no-repeat;
 }
 .container {
     width: 1441px;
@@ -66,7 +68,7 @@ h1 {
     margin-left: 80px;
     margin-top: 195px;
 }
-p {
+.side1 p {
     font: 400 18px 'Libre Franklin';
     margin-left: 80px;
     margin-top: 24px;
@@ -102,8 +104,35 @@ p {
 .player {
     margin-left: 700px;
 }
-.sounds {
+.player img {
+    width: 760px;
+    height: 499px;
+}
+.player h3 {
     font: 600 30px 'Libre Franklin';
     font-variant: small-caps;
     text-align: center;
 }
+/*  
+.studio {
+    background: url(./img/back2.png) no-repeat;
+    margin-top: -200px;
+    border: solid 1px red;
+    
+}
+.studio img {
+    margin-top: 350px;
+    float: left;
+}
+.studio div {
+    width: auto;
+    border: solid 1px red;
+    margin-left: 80px;
+}
+.studio h3 {
+    margin-top: 500px;
+    font: 600 30px 'Libre Franklin';
+    font-variant: small-caps;
+    text-align: left;
+}
+    */

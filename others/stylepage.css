@@ -1,0 +1,25 @@
+body {
+    font-size: 40px;
+}
+body > div ul li:first-child a {
+    color: red;
+}
+body > div ul li:nth-child(n) span a {
+    color: green;
+}
+body > div ul li:nth-child(n) em a {
+    color: blue;
+}
+body > div p em a {
+    color: yellow;
+}
+body > div span em a {
+    color: black;
+}
+body > ul li:first-of-type a {
+    color: orange;
+}
+
+body > ul li:first-child span a {
+    color: rosybrown;
+}

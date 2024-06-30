@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+.name {
+    font-size: 40px;
+    font-weight: 900;
+}
+.data {
+    color: rgb(92, 156, 92);
+}
+.years {
+    color: red;
+}
+.link {
+    color: blue;
+}
+.work {
+    font-style: italic;
+    color: blue;
+}
+.first {
+    font-style: italic;
+    color: blue;
+}
+.winner {
+    font-style: italic;
+    color: blue;
+}
+p.last {
+    margin-top: 30px;
+}
+.link::before {
+    content: url(./extref.png);
+    width: 16px;
+    height: auto;
+}

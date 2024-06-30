@@ -1,0 +1,26 @@
+.name {
+    font-size: 40px;
+    font-weight: 900;
+}
+.data {
+    color: rgb(3, 93, 3);
+}
+.years {
+    color: red;
+}
+.link {
+    color: blue;
+    text-decoration: underline;
+}
+.work {
+    font-style: italic;
+    color: blue;
+}
+.first {
+    font-style: italic;
+    color: blue;
+}
+.winner {
+    font-style: italic;
+    color: blue;
+}
