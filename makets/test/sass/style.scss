@@ -1,0 +1,27 @@
+$maincolor: #3e96ee;
+@mixin title {
+    background-color: $maincolor;
+    font-size: 100px;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+div:first-of-type {
+  background-color: antiquewhite;
+
+  & h1 {
+    @include title;
+  } 
+
+  & p {
+    font-size: 30px;
+  }
+}
+
+div:last-of-type {
+    h2,h3,h4 {
+        @include title;
+    }
+}
+
+

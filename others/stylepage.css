@@ -1,25 +1,39 @@
 body {
-    font-size: 40px;
+  font-size: 30px;
 }
 body > div ul li:first-child a {
-    color: red;
+  color: red;
 }
 body > div ul li:nth-child(n) span a {
-    color: green;
+  color: green;
 }
 body > div ul li:nth-child(n) em a {
-    color: blue;
+  color: blue;
 }
 body > div p em a {
-    color: yellow;
+  color: yellow;
 }
 body > div span em a {
-    color: black;
+  color: black;
 }
-body > ul li:first-of-type a {
-    color: orange;
+body > ul > li a {
+  color: orange;
 }
-
 body > ul li:first-child span a {
-    color: rosybrown;
+  color: pink;
+}
+body > ul > li > em a {
+  color: violet;
+}
+body > ul > li > p > em > a {
+  color: aqua;
+}
+body > ul li > div > ul > li > a {
+  color: indigo;
+}
+body > ul li > div > ul li > em > a {
+  color: chocolate;
+}
+body > ul li > div > p > a {
+    color: rgba(246, 238, 238, 0.914);
 }

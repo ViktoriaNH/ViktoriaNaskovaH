@@ -1,0 +1,33 @@
+/* form {
+    width: 50%;
+    margin: 50px auto;
+  }
+  input {
+    box-sizing: border-box;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  .field {
+    /* margin-right: 90px; /* Ширина кнопки + отступ 
+  }
+  input[type="submit"] {
+    float: right;
+    width: 80px;
+  } */
+
+
+  input {
+    box-sizing: border-box;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  .field {
+margin-left: 90px;
+  }
+
+  span {
+    float: left;
+    width: 80px;
+  }  

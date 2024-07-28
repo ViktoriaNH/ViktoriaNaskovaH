@@ -1,0 +1,38 @@
+p 
+{
+    font-size: 20px;
+}
+div {
+    position: relative;
+    width: 700px;
+    height: 450px;
+    margin: 0 auto;
+}
+img {
+    position: absolute;
+}
+img:first-child {
+    top: 30px;
+    left: 130px;
+}
+img:nth-child(2) {
+    top: 25px;
+    right: 200px;
+}
+img:nth-child(3) {
+    top: 220px;
+    left: 230px;
+}
+img:last-child {
+    top: 100px;
+    left: 200px;
+ };
+ img:first-child:hover {
+    z-index: 100;
+ }
+ img:nth-child(2):hover {
+    z-index: 100;
+ }
+ img:nth-child(3):hover {
+    z-index: 100;
+ }

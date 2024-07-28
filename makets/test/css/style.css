@@ -1,0 +1,17 @@
+div:first-of-type {
+  background-color: antiquewhite; }
+  div:first-of-type h1 {
+    background-color: #3e96ee;
+    font-size: 100px;
+    text-align: center;
+    text-decoration: line-through; }
+  div:first-of-type p {
+    font-size: 30px; }
+
+div:last-of-type h2, div:last-of-type h3, div:last-of-type h4 {
+  background-color: #3e96ee;
+  font-size: 100px;
+  text-align: center;
+  text-decoration: line-through; }
+
+/*# sourceMappingURL=style.css.map */

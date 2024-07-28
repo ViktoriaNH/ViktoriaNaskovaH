@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 3000px;
+  }
+  h2 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  h4 {
+    margin: 10px;
+  }
+  .background {
+    background: url(./images/ball1.gif) top right repeat-y;
+  }
+  .background::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  img {
+    width: 250px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+  }
+  p {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .header {
+    text-align: center;
+    background-color: rgb(211, 211, 153);
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  .content1 {
+    background-image: url(./images/p1.png);
+    background-repeat: repeat-y;
+    background-size: 15%;
+  }
+  .content img {
+    float: left;
+  }
+  .menu {
+    float: left;
+    width: 15%;
+    background-color: rgb(149, 149, 185);
+  }
+  .menu li {
+    margin-left: 25px;
+  }
+  .club {
+    width: 100px;
+    height: 60px;
+    background-color: rgb(70, 132, 70);
+    border: solid black 1px;
+    position: fixed; top: 30px; right: 30px;
+    line-height: 27px;
+    text-align: center;
+  }
+  .banner {
+    float: right;
+    width: 3%;
+    height: 200px;
+  }
+  .content {
+    margin-left: 16%;
+    margin-right: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .footer {
+    text-align: center;
+    font-weight: 900;
+    background-color: rgb(227, 165, 165);
+    padding: 20px;
+    clear: both;
+  }
+  
+  @media (max-width: 1080px) {
+    .header {
+      font-size: 8px;
+      padding: 10px;
+    }
+    .footer {
+      padding: 10px;
+    }
+    .footer p {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 16px;
+      margin-top: 0;
+    }
+    h4 {
+      font-size: 14px;
+    }
+    .content p {
+      font-size: 16px;
+    }
+    a {
+      font-size: 12px;
+    }
+    .background {
+      background: url(./images/ball1.gif) top right repeat-y;
+      background-size: 30px auto;
+    }
+    .content1 {
+      background-image: url(./images/p1.png);
+      background-repeat: repeat-y;
+      background-size: 15%;
+    }
+    .menu {
+      width: 15%;
+    }
+    .content img {
+      float: left;
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .club {
+        width: 80px;
+        height: 40px;
+        font-size: 10px;
+        line-height: 18px;
+  }
+}
+  
+  @media (max-width: 815px) {
+    a {
+      font-size: 10px;
+    }
+    .menu li {
+      list-style-type: none;
+      margin: 5px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 12px;
+    }
+    h4 {
+      margin: 0;
+      font-size: 12px;
+    }
+    h2 {
+      padding: 5px;
+      font-size: 12px;
+      text-align: center;
+    }
+    .menu {
+      display: block;
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+    .menu li {
+      display: inline;
+    }
+    a {
+      font-size: 12px;
+    }
+    .content1 {
+      background-image: none;
+      width: 100%;
+    }
+    .content {
+      margin-left: 3%;
+      margin-right: 10%;
+    }
+    .content p {
+      font-size: 12px;
+    }
+    .content img {
+      margin-right: 5px;
+      margin-bottom: 0px;
+    }
+    .club {
+        width: 50px;
+        height: 35px;
+        font-size: 7px;
+        line-height: 15px;
+        position: fixed; top: 0; right: 0;
+  }
+}
+  
+
+  
