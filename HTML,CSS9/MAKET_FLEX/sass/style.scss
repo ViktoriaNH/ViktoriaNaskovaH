@@ -1,0 +1,46 @@
+@mixin text {
+  background-color: rgb(215, 215, 245);
+  text-align: center;
+  padding: 10px;
+}
+header,
+footer {
+  @include text;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+nav {
+  width: 200px;
+  background-color: rgb(224, 224, 153);
+  h4 {
+    margin: 10px;
+  }
+  ul {
+    padding-left: 25px;
+  }
+}
+img {
+  float: left;
+  width: 250px;
+  aspect-ratio: 1.5;
+  margin-right: 20px;
+}
+article {
+  width: 85%;
+  margin-left: 15px;
+  background-image: url(../img/ball1.gif);
+  background-repeat: repeat-y;
+  background-position: right center;
+  h3 {
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+
