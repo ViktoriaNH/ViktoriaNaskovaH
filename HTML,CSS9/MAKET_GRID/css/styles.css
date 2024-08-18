@@ -1,0 +1,28 @@
+@media (max-width: 1077px) { body .grid-container { grid-template-columns: 13% 1fr; grid-template-rows: 70px 1fr 70px; }
+  body .grid-container h2 { font-size: 18px; margin-top: -8px; }
+  body .grid-container img { width: 180px; }
+  body .grid-container article p { font-size: 18px; }
+  body .grid-container article h3 { font-size: 20px; }
+  body .grid-container nav ul { list-style-type: none; padding-left: 3px; }
+  body .grid-container nav ul a { font-size: 10px; } }
+@media (max-width: 537px) { body .grid-container { grid-template-columns: 100%; grid-template-rows: 90% 1fr; grid-template-areas: "article" "nav"; }
+  body .grid-container footer, body .grid-container header { display: none; }
+  body .grid-container article { grid-area: article; background-image: none; }
+  body .grid-container article h3 { text-align: center; }
+  body .grid-container article img { float: none; width: 100%; margin: 0; }
+  body .grid-container nav { grid-area: nav; background-color: transparent; }
+  body .grid-container nav ul { padding: 0; }
+  body .grid-container nav li { display: inline; margin-right: 7px; } }
+.grid-container { display: grid; grid-template-columns: 15% 1fr; grid-template-rows: 100px 1fr 100px; grid-template-areas: "header header" "nav article" "footer footer"; }
+.grid-container header { grid-area: header; background-color: #d7d7f5; text-align: center; padding: 35px 0; }
+.grid-container nav { grid-area: nav; background-color: #e0e099; }
+.grid-container nav h4 { margin: 10px; }
+.grid-container nav ul { padding-left: 25px; }
+.grid-container nav ul li { font-size: 20px; }
+.grid-container article { grid-area: article; background-image: url(../images/ball1.gif); background-repeat: repeat-y; background-position: right center; padding: 20px; }
+.grid-container h3 { text-align: center; font-size: 30px; }
+.grid-container p { font-size: 20px; }
+.grid-container img { float: left; width: 250px; aspect-ratio: 1.5; margin: 0 20px 20px 10px; }
+.grid-container footer { grid-area: footer; background-color: #d7d7f5; text-align: center; padding: 35px 0; }
+
+/*# sourceMappingURL=styles.css.map */
