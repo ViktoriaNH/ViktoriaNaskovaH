@@ -1,0 +1,573 @@
+@import "normilize", "variables", "base", "mixins", "media";
+
+* {
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  color: $accent-color;
+  position: relative;
+  // position: fixed; плюс сделать полупрозрачным !!!!!!!!!!!!!!!!!
+}
+.start-page {
+  background: url(../images/hero\ image.jpg) no-repeat;
+  min-height: 800px;
+  background-size: cover;
+
+  .nav-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: content-box;
+    width: 742px;
+    margin-left: 268px;
+    margin-top: 40px;
+  }
+  .logo {
+    margin-top: 50px;
+  }
+
+  header ul {
+    display: inline-flex;
+    justify-content: flex-start;
+    column-gap: 23px;
+  }
+
+  header a {
+    font: normal bold 14px $font-base;
+  }
+  header .number {
+    font: normal bold 18px $font-base;
+  }
+
+  header p {
+    font-size: 14px;
+    display: inline-block;
+  }
+  a:hover {
+    color: #c4c4c4;
+  }
+
+  header li:hover {
+    transition-duration: $transition-duration;
+  }
+
+  .grid-container {
+    display: inline-grid;
+    width: 160px;
+    margin-left: 0;
+    margin-top: 0;
+    grid-template-columns: 25px 131px 155px;
+    grid-template-rows: 23px 25px 38px;
+    grid-column-gap: 8px;
+  }
+  .grid-container img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .grid-container p {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+  button {
+    background-color: $order-color;
+    font: normal bold 14px $font-base;
+    color: $accent-color;
+  }
+}
+
+article.container {
+  position: relative;
+  h1 {
+    text-align: center;
+    color: $heading-color;
+    span:first-child {
+      font: 400 50px $font-accent;
+    }
+    span:last-child {
+      font: 400 80px $font-accent;
+    }
+  }
+  p {
+    color: $accent-color;
+    text-transform: uppercase;
+    font: 400 18px $font-base;
+  }
+  button {
+    background-color: $order-color;
+    width: 137px;
+    font: normal bold 14px $font-base;
+    color: $accent-color;
+  }
+}
+.welcome {
+  position: absolute;
+  top: 203px;
+  text-align: center;
+
+  div {
+    position: absolute;
+    left: 90px;
+    svg {
+      vertical-align: super;
+    }
+    p {
+      margin: 0 auto;
+    }
+  }
+  button {
+    position: absolute;
+    left: 167px;
+    top: 190px;
+  }
+}
+
+.ourhistory {
+  position: relative;
+  background-color: $accent-color;
+  min-height: 991px;
+
+  .history {
+    position: absolute;
+    top: 371px;
+    width: 444px;
+    aspect-ratio: 0.95;
+    padding: 10px;
+
+    .grid {
+      width: 300px;
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 85px 85px 85px;
+      grid-template-rows: 54px 27px;
+      justify-content: center;
+      text-align: center;
+
+      div:nth-of-type(-n + 3) {
+        font: 400 40px $font-base;
+        color: $number-icons-color;
+      }
+      div:nth-of-type(n + 4) {
+        font: 400 20px $font-base;
+        color: $maintext-color;
+      }
+    }
+  }
+  .images {
+    width: 539px;
+    aspect-ratio: 0.92;
+    position: relative;
+    left: 590px;
+    top: 371px;
+
+    svg {
+      position: absolute;
+      top: -150px;
+      right: 10px;
+      z-index: 10;
+    }
+
+    img:first-of-type {
+      position: absolute;
+      right: 90px;
+      z-index: 20;
+    }
+
+    img:nth-of-type(2) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 30;
+    }
+    img:nth-of-type(3) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 70px;
+      z-index: 30;
+      box-shadow: 18px 0px 23px 6px rgba(34, 60, 80, 0.2);
+    }
+  }
+  p {
+    text-align: center;
+    color: $othertext-color;
+    font: 400 16px $font-base;
+  }
+  .positive {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    div {
+      @include box;
+      position: relative;
+      bottom: 700px;
+      img {
+        position: absolute;
+        left: 50%;
+        top: 48px;
+        transform: translateX(-50%);
+      }
+      h3 {
+        position: relative;
+        top: 41%;
+      }
+      p {
+        position: relative;
+        top: 50%;
+        font: $main-font;
+      }
+    }
+  }
+}
+
+// Styles ASIDE
+
+aside {
+  background-image: url(../images/background.jpg);
+  background-size: 100% 357px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0px 104px 0px;
+
+    span:first-of-type {
+      font: 400 52px $font-accent;
+      color: #d67e34;
+    }
+
+    span:last-of-type {
+      font: 700 24px $font-base;
+      color: $accent-color;
+    }
+    button {
+      @include button-type1;
+    }
+  }
+}
+
+// Styles SECTION 4 DISHES
+.dishes {
+  background-color: $background-color;
+}
+.dishes .container {
+  padding: 132px 0 150px 0;
+  display: flex;
+  justify-content: flex-start;
+  .pizza {
+    display: grid;
+    width: 650px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 29px;
+
+    img:first-of-type {
+      grid-area: 1 / 1 / 4 / 3;
+    }
+    img:nth-of-type(2) {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    img:nth-of-type(3) {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+    img:nth-of-type(4) {
+      grid-area: 3 / 3 / 4 / 4;
+    }
+    img:hover {
+      transition: 1s;
+      transform: scale(1.2);
+    }
+  }
+
+  .description {
+    width: 479px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 150px;
+    P {
+      font: $main-font;
+    }
+  }
+}
+.dishes > h2 {
+  margin-top: 132px;
+}
+
+// Styles SECTION 5 MENU
+
+.menu {
+  min-height: 1034px;
+  background-image: url(../images/menu.jpg);
+  background-size: 100% 1036px;
+  & h2 {
+    color: $accent-color;
+    position: relative;
+    top: 100px;
+  }
+  .container {
+    width: 1129px;
+    height: auto;
+    margin: 0 auto;
+    border: solid green 3px;
+    position: relative;
+    top: 300px;
+    display: flex;
+    justify-content: space-between;
+    div {
+      position: relative;
+      overflow: hidden;
+      width: 350px;
+      min-height: 510px;
+      background-color: $accent-color;
+    }
+    img {
+      clip-path: circle(110px at 50% 50%);
+      position: absolute;
+      left: 50%;
+      margin-left: -112.5px;
+      top: 80px;
+    }
+    svg {
+      position: absolute;
+      top: 205px;
+      right: 61px;
+
+      text {
+        font: italic 400 30px $font-accent;
+      }
+    }
+    svg:hover {
+      transition: 1s;
+      transform: scale(1.2);
+    }
+    h3 {
+      text-transform: none;
+      position: relative;
+      top: 327px;
+    }
+    p {
+      width: 226px;
+      display: inline-block;
+      position: relative;
+      top: 340px;
+      left: 62px;
+      font: 400 16px $font-base;
+      text-align: center;
+    }
+    button {
+      @include button-type2;
+      position: relative;
+      top: 355px;
+      left: 62px;
+      box-shadow: 7px 8px 15px 1px rgba(34, 60, 80, 0.35);
+    }
+    .top {
+      background-color: $button-color;
+      width: 124px;
+      min-height: 36px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      font: 400 13px $font-base;
+      color: $maintext-color;
+      padding: 8px;
+    }
+  }
+}
+.guest {
+  background-color: #c4c4c4;
+  div {
+    position: relative;
+    min-height: 550px;
+  }
+  p {
+    font: italic 400 20px $font-base;
+    margin-top: 104px;
+    text-align: center;
+  }
+  img {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-left: -50px;
+  }
+  h4 {
+    display: inline;
+    font: 600 20px $font-base;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -59px;
+  }
+  p:last-of-type {
+    display: inline;
+    font: 400 20px $font-base;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -42.5px;
+  }
+}
+.gallery {
+  h2 {
+    margin-top: 101px;
+    margin-bottom: 60px;
+  }
+  div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+
+    img:first-of-type {
+      grid-column: span 2 / span 2;
+    }
+    img:nth-of-type(2) {
+      grid-column-start: 3;
+    }
+    img:nth-of-type(3) {
+      grid-column-start: 4;
+    }
+    img:nth-of-type(4) {
+      grid-row-start: 2;
+    }
+    img:nth-of-type(5) {
+      grid-row-start: 2;
+    }
+    img:nth-of-type(6) {
+      grid-column: span 2 / span 2;
+      grid-row-start: 2;
+    }
+    img:hover {
+      transition: 1s;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.cooks {
+  h2 {
+    margin-top: 100px;
+    margin-bottom: 107px;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    p {
+      color: $maintext-color;
+      font: 600 40px $font-accent;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition-duration: $transition-duration;
+    }
+  }
+  .card:hover p {
+    opacity: 1;
+    top: 50%;
+    z-index: 10;
+  }
+  .card:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000041;
+    transition-duration: 0.8s;
+  }
+}
+
+// БРОНЬ
+
+.reservation {
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+  min-height: 800px;
+  h2 {
+    position: relative;
+    z-index: 2;
+    top: 50px;
+    margin-bottom: 100px;
+  }
+  .form {
+    width: 700px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    color: $maintext-color;
+    label {
+      font: normal bold 24px $font-base;
+    }
+    input {
+      font: $paragraph-font;
+      border-bottom: 1px solid $maintext-color;
+      background-color: transparent;
+      z-index: 2;
+    }
+    textarea {
+      z-index: 3;
+      background-color: transparent;
+      border: 1px solid $maintext-color;
+      height: 150px;
+      resize: vertical;
+    }
+    button {
+      z-index: 2;
+      @include button-type2;
+      position: relative;
+      left: 50%;
+      margin-left: -110px;
+    }
+  }
+}
+.reservation::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url(../images/restaurant.jpg);
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+// footer
+
+footer {
+  padding: 30px 0;
+  ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .contacts {
+    display: flex;
+    gap: 50px;
+    max-width: 585px;
+    font: $paragraph-font;
+  }
+}

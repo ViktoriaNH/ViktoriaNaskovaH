@@ -1,4 +1,35 @@
+circle {
+    stroke: rgb(177, 182, 8);
+    fill: rgba(251, 187, 108, 0.267);
+}
+circle:hover {
+    fill: rgb(77, 6, 6);
+}
+line {
+    stroke: green;
+    stroke-width: 5px;
+}
+ellipse {
+    stroke: rgb(145, 20, 107);
+    fill: rgb(218, 144, 161);
+}
+ellipse:nth-child(odd):hover {
+    transform: translate(195px,115px);
+    fill:rgb(177, 182, 8);
 
-#svg_23 {
-    color: aqua;
+}
+ellipse:nth-child(even):hover {
+    transform: translate(25px,34px);
+    fill:rgb(182, 8, 72);
+}
+path {
+    stroke: green;
+    fill: rgba(40, 121, 36, 0.267);
+}
+svg:hover {
+    transform: scale(2, 1.5);
+}
+path:hover {
+    transform: skewY(5deg);
+    stroke:rgb(177, 182, 8);
 }

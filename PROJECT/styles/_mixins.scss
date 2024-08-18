@@ -1,0 +1,20 @@
+@mixin box {
+  padding: 10px 15px;
+  width: 349px;
+  height: 328px;
+  background-color: $accent-color;
+  box-shadow: 1px 21px 36px 0px rgba(34, 60, 80, 0.2);
+}
+
+@mixin button-type1 {
+  background-color: $order-color;
+  font: normal bold 14px $font-base;
+  color: $accent-color;
+}
+@mixin button-type2 {
+  width: 220px;
+  height: 50px;
+  background-color: $button-color;
+  font: normal bold 16px $font-base;
+  color: $accent-color;
+}

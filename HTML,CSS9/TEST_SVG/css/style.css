@@ -1,3 +1,19 @@
+circle { stroke: #b1b608; fill: rgba(251, 187, 108, 0.267); }
 
+circle:hover { fill: #4d0606; }
+
+line { stroke: green; stroke-width: 5px; }
+
+ellipse { stroke: #91146b; fill: #da90a1; }
+
+ellipse:nth-child(odd):hover { -webkit-transform: translate(195px, 115px); transform: translate(195px, 115px); fill: #b1b608; }
+
+ellipse:nth-child(even):hover { -webkit-transform: translate(25px, 34px); transform: translate(25px, 34px); fill: #b60848; }
+
+path { stroke: green; fill: rgba(40, 121, 36, 0.267); }
+
+svg:hover { -webkit-transform: scale(2, 1.5); transform: scale(2, 1.5); }
+
+path:hover { -webkit-transform: skewY(5deg); transform: skewY(5deg); stroke: #b1b608; }
 
 /*# sourceMappingURL=style.css.map */
