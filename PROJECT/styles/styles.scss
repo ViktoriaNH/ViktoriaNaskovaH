@@ -1,19 +1,16 @@
 @import "normilize", "variables", "base", "mixins", "media";
 
-* {
-  scroll-behavior: smooth;
-}
 header {
   display: flex;
   justify-content: space-between;
   color: $accent-color;
   position: relative;
-  // position: fixed; плюс сделать полупрозрачным !!!!!!!!!!!!!!!!!
 }
 .start-page {
   background: url(../images/hero\ image.jpg) no-repeat;
-  min-height: 800px;
+  min-height: 700px;
   background-size: cover;
+  position: relative;
 
   .nav-wrapp {
     display: flex;
@@ -36,6 +33,21 @@ header {
 
   header a {
     font: normal bold 14px $font-base;
+    position: relative;
+  }
+  header a::after {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: $accent-color;
+    content: "";
+    transition: all 0.6s ease;
+  }
+  a:hover:after {
+    width: 100%;
   }
   header .number {
     font: normal bold 18px $font-base;
@@ -45,19 +57,16 @@ header {
     font-size: 14px;
     display: inline-block;
   }
-  a:hover {
-    color: #c4c4c4;
-  }
-
-  header li:hover {
-    transition-duration: $transition-duration;
+  .basket {
+    margin-right: 50px;
+    margin-top: 75px;
   }
 
   .grid-container {
     display: inline-grid;
-    width: 160px;
+    width: 200px;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 35px;
     grid-template-columns: 25px 131px 155px;
     grid-template-rows: 23px 25px 38px;
     grid-column-gap: 8px;
@@ -74,59 +83,44 @@ header {
     background-color: $order-color;
     font: normal bold 14px $font-base;
     color: $accent-color;
+    margin-top: 45px;
   }
+
 }
 
-article.container {
-  position: relative;
-  h1 {
-    text-align: center;
-    color: $heading-color;
-    span:first-child {
-      font: 400 50px $font-accent;
-    }
-    span:last-child {
-      font: 400 80px $font-accent;
-    }
-  }
-  p {
-    color: $accent-color;
-    text-transform: uppercase;
-    font: 400 18px $font-base;
-  }
-  button {
-    background-color: $order-color;
-    width: 137px;
-    font: normal bold 14px $font-base;
-    color: $accent-color;
-  }
-}
-.welcome {
-  position: absolute;
-  top: 203px;
-  text-align: center;
-
-  div {
-    position: absolute;
-    left: 90px;
-    svg {
-      vertical-align: super;
-    }
-    p {
-      margin: 0 auto;
-    }
-  }
-  button {
-    position: absolute;
-    left: 167px;
-    top: 190px;
-  }
-}
 
 .ourhistory {
   position: relative;
   background-color: $accent-color;
   min-height: 991px;
+
+  .plasehistory {
+    width: 444px;
+    position: absolute;
+    left: 20%;
+    bottom: 40%;
+
+    .grid {
+      width: 300px;
+      position: absolute;
+      bottom: -100px;
+      left: 60px;
+      display: grid;
+      grid-template-columns: 85px 85px 85px;
+      grid-template-rows: 54px 27px;
+      justify-content: center;
+      text-align: center;
+
+      span:nth-of-type(-n + 3) {
+        font: 400 40px $font-base;
+        color: $number-icons-color;
+      }
+      span:nth-of-type(n + 4) {
+        font: 400 20px $font-base;
+        color: $maintext-color;
+      }
+  }
+}
 
   .history {
     position: absolute;
@@ -134,35 +128,13 @@ article.container {
     width: 444px;
     aspect-ratio: 0.95;
     padding: 10px;
-
-    .grid {
-      width: 300px;
-      position: absolute;
-      bottom: 0;
-      left: 15%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 85px 85px 85px;
-      grid-template-rows: 54px 27px;
-      justify-content: center;
-      text-align: center;
-
-      div:nth-of-type(-n + 3) {
-        font: 400 40px $font-base;
-        color: $number-icons-color;
-      }
-      div:nth-of-type(n + 4) {
-        font: 400 20px $font-base;
-        color: $maintext-color;
-      }
-    }
   }
   .images {
     width: 539px;
     aspect-ratio: 0.92;
     position: relative;
     left: 590px;
-    top: 371px;
+    top: 300px;
 
     svg {
       position: absolute;
@@ -190,6 +162,10 @@ article.container {
       top: 70px;
       z-index: 30;
       box-shadow: 18px 0px 23px 6px rgba(34, 60, 80, 0.2);
+    }
+    img:hover {
+      transform: scale(1.2);
+      transition-duration: $transition-duration;
     }
   }
   p {
@@ -220,6 +196,10 @@ article.container {
         top: 50%;
         font: $main-font;
       }
+    }
+    div:hover {
+      transform: translateY(-10px);
+      transition-duration: $transition-duration;
     }
   }
 }
@@ -328,6 +308,10 @@ aside {
       min-height: 510px;
       background-color: $accent-color;
     }
+    div:hover {
+      transform: translateY(-10px);
+      transition-duration: $transition-duration;
+    }
     img {
       clip-path: circle(110px at 50% 50%);
       position: absolute;
@@ -416,6 +400,9 @@ aside {
     margin-left: -42.5px;
   }
 }
+
+// Галееря блюд
+
 .gallery {
   h2 {
     margin-top: 101px;
@@ -464,8 +451,8 @@ aside {
   }
   .card {
     position: relative;
-    border-radius: 20px;
     overflow: hidden;
+    transition-duration: $transition-duration;
     p {
       color: $maintext-color;
       font: 600 40px $font-accent;
@@ -490,7 +477,6 @@ aside {
     width: 100%;
     height: 100%;
     background: #00000041;
-    transition-duration: 0.8s;
   }
 }
 

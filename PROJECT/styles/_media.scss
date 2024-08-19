@@ -1,0 +1,527 @@
+@media (max-width: 1130px) {
+  .start-page {
+    .container {
+      width: 800px;
+      margin: 0 auto;
+      background-color: rgb(47, 47, 136);
+
+      .basket {
+        margin-right: 15px;
+        margin-top: 65px;
+      }
+    }
+    div.nav-wrapp {
+      background-color: rgb(47, 47, 136);
+      width: 700px;
+      margin-left: 80px;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+    header ul {
+      column-gap: 13px;
+    }
+    button.order {
+      width: 80px;
+      height: 40px;
+      font: normal 400 8px $font-base;
+    }
+  }
+
+  .ourhistory.text {
+    .container {
+      width: 800px;
+      div.images {
+        svg {
+          display: none;
+        }
+        img:first-of-type {
+          display: none;
+        }
+        img:nth-of-type(2) {
+          display: none;
+        }
+        img:nth-of-type(3) {
+          display: none;
+        }
+      }
+      div.placehistory {
+        width: 344px;
+        bottom: 300px;
+      }
+      .positive.text {
+        div {
+          width: 250px;
+          height: 220px;
+        }
+        h3 {
+          font-size: 25px;
+          top: 25%;
+        }
+        p {
+          position: relative;
+          top: 30%;
+          font-size: 17px;
+        }
+        img {
+          width: 55px;
+          height: 55px;
+          top: 10px;
+        }
+      }
+    }
+  }
+
+  aside {
+    .container {
+      width: 800px;
+    }
+  }
+  section.dishes {
+    .container {
+      width: 800px;
+      position: relative;
+      padding: 50px;
+      .pizza {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      img {
+        width: 160px;
+        height: 140px;
+      }
+      img:first-of-type {
+        width: 250px;
+        height: 250px;
+      }
+      div.description {
+        width: 500px;
+        position: absolute;
+        right: 10px;
+        top: 40%;
+      }
+    }
+  }
+
+  section.menu {
+    min-height: 800px;
+
+    h2 {
+      top: 50px;
+    }
+    .container {
+      width: 800px;
+      top: 100px;
+      div {
+        width: 260px;
+        min-height: 510px;
+      }
+      p {
+        position: absolute;
+        left: 10%;
+        top: 70%;
+      }
+      button {
+        position: absolute;
+        left: 10%;
+        top: 80%;
+      }
+    }
+  }
+
+  article.guest {
+    .container {
+      width: 800px;
+    }
+  }
+
+  section.gallery {
+    h2 {
+      margin-top: 50px;
+    }
+    .container {
+      width: 800px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  section.cooks {
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .container {
+      width: 800px;
+    }
+    .card {
+      width: 250px;
+      height: 360px;
+    }
+  }
+
+  section.reservation {
+    .container {
+      width: 800px;
+    }
+  }
+
+  footer {
+    .container {
+      width: 800px;
+    }
+  }
+}
+
+@media (max-width: 815px) {
+  .start-page {
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      background-color: rgb(47, 136, 77);
+
+      .basket {
+        margin-right: 15px;
+        margin-top: 15px;
+      }
+      button {
+        margin-top: 5px;
+      }
+    }
+    .logo {
+      display: none;
+    }
+    div.nav-wrapp {
+      width: 200px;
+      margin-left: 10px;
+      margin-top: 0px;
+      ul {
+        column-gap: 15px;
+      }
+      a {
+        font: normal bold 10px $font-base;
+      }
+    }
+    div.grid-container {
+      display: none;
+    }
+    .grid-container img {
+      display: none;
+    }
+  }
+  .ourhistory.text {
+    .container {
+      width: 400px;
+      div.images {
+        svg {
+          display: none;
+        }
+        img:first-of-type {
+          display: none;
+        }
+        img:nth-of-type(2) {
+          display: none;
+        }
+        img:nth-of-type(3) {
+          display: none;
+        }
+      }
+      .positive.text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        div {
+          width: 250px;
+          height: 220px;
+        }
+        h3 {
+          font-size: 25px;
+          top: 25%;
+        }
+        p {
+          position: relative;
+          top: 30%;
+          font-size: 17px;
+        }
+        img {
+          width: 55px;
+          height: 55px;
+          top: 10px;
+        }
+      }
+      .plasehistory {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        .grid {
+          position: absolute;
+          top: 400px;
+          left: 50%;
+          transform: translate(-50%);
+        }
+      }
+    }
+  }
+
+  aside {
+    .container {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      p {
+        text-align: center;
+      }
+    }
+    button {
+      margin-top: 20px;
+    }
+  }
+
+  section.dishes {
+    .container {
+      width: 400px;
+      position: relative;
+      padding: 50px;
+      align-items: center;
+      .description {
+        width: 100px;
+        right: 10px;
+        top: 40%;
+        p {
+          font-size: 20px;
+          display: inline;
+          width: 100px;
+          position: absolute;
+          right: 30px;
+          top: 200px;
+          span {
+            display: none;
+          }
+        }
+      }
+      .pizza {
+        img {
+          width: 160px;
+          height: 140px;
+        }
+        img:first-of-type {
+          width: 290px;
+          height: 250px;
+        }
+      }
+    }
+  }
+
+  section.menu {
+    .container {
+      width: 400px;
+      top: 100px;
+      div:first-of-type {
+        width: 350px;
+        margin: 0 auto;
+        min-height: 510px;
+      }
+      .cardmenu {
+        display: none;
+      }
+      p {
+        left: 18%;
+      }
+      button {
+        left: 18%;
+      }
+    }
+  }
+
+  article.guest {
+    .container {
+      width: 400px;
+    }
+    p {
+      margin-top: 40px;
+      font-size: 17px;
+    }
+    h4 {
+      top: 65%;
+    }
+  }
+
+  section.gallery {
+    h2 {
+      margin-top: 50px;
+    }
+    .container {
+      width: 400px;
+
+      .glass {
+        width: 400px;
+      }
+    }
+  }
+
+  section.cooks {
+    .container {
+      width: 400px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .card {
+      width: 350px;
+      height: 410px;
+    }
+  }
+
+  section.reservation {
+    .container {
+      width: 400px;
+      .form {
+        width: 400px;
+      }
+    }
+  }
+  footer {
+    .container {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 402px) {
+  div.start-page {
+    min-height: 300px;
+    background-size: cover;
+    .container {
+      width: 350px;
+      margin: 0 auto;
+      background-color: rgb(153, 223, 22);
+      .basket {
+        margin-right: 5px;
+        margin-top: 15px;
+      }
+      div.nav-wrapp {
+        width: 150px;
+        margin-left: 5px;
+
+        ul {
+          column-gap: 5px;
+          margin: 0 auto;
+        }
+        a {
+          font: normal bold 8px $font-base;
+        }
+      }
+    }
+  }
+
+  .ourhistory.text {
+    .container {
+      width: 395px;
+    }
+  }
+  aside {
+    .container {
+      width: 395px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      p span:first-of-type {
+        text-align: center;
+        font-size: 25px;
+      }
+      p span:last-of-type {
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+    button {
+      margin-top: 20px;
+    }
+  }
+
+  section.dishes {
+    & > h2 {
+      margin-top: 10px;
+    }
+    .container {
+      width: 395px;
+    }
+  }
+
+  section.menu {
+    .container {
+      width: 395px;
+
+      div:first-of-type {
+        width: 310px;
+        margin: 0 auto;
+        min-height: 490px;
+      }
+      p {
+        left: 16%;
+        top: 360px;
+      }
+
+      button {
+        left: 16%;
+        top: 410px;
+      }
+    }
+  }
+
+  article.guest {
+    .container {
+      width: 390px;
+      padding: 15px;
+    }
+    p {
+      margin: 40px;
+      font-size: 13px;
+    }
+  }
+
+  section.gallery {
+    .container {
+      width: 390px;
+      .glass {
+        width: 350px;
+      }
+    }
+  }
+  section.cooks {
+    .container {
+      width: 395px;
+
+      div.card img {
+        width: 280px;
+        height: 390px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  section.reservation {
+    .container {
+      width: 350px;
+      flex-direction: column;
+      align-items: center;
+      .form {
+        width: 350px;
+      }
+    }
+  }
+
+  footer {
+    .container {
+      width: 350px;
+    }
+  }
+}

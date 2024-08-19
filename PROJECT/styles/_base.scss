@@ -90,6 +90,7 @@ input {
 body {
   background-color: $background-color;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 .container {
   width: 1129px;
@@ -147,4 +148,3 @@ button:hover {
   opacity: 0.5;
   color: #c4c4c4;
   }
-

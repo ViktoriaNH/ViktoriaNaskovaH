@@ -40,29 +40,15 @@
             </ul>
           </nav>
 
+        </div>
           <img
+          class="basket"
             src="./icons/cart.svg"
             alt="корзина"
             title="заказать"
             width="13"
             height="13"
           />
-
-          <svg
-            width="1"
-            height="51"
-            viewBox="0 0 1 51"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="0.5"
-              y1="2.18557e-08"
-              x2="0.499998"
-              y2="51"
-              stroke="white"
-            />
-          </svg>
 
           <div class="grid-container">
             <img
@@ -78,45 +64,14 @@
               бронирования
             </p>
           </div>
-          <button>ЗАКАЗ СТОЛИКА</button>
+          <button class="order">ЗАКАЗ СТОЛИКА</button>
         </div>
       </header>
 
-      <article class="container">
-        <div class="welcome">
-          <h1>
-            <span>Добро пожаловать в</span><br /><span>Наш ресторан</span>
-          </h1>
-          <div>
-            <svg
-              width="61"
-              height="2"
-              viewBox="0 0 61 2"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="61" height="2" fill="#C4C4C4" />
-            </svg>
-            <p>Дом лучшей еды</p>
-            <svg
-              width="61"
-              height="2"
-              viewBox="0 0 61 2"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="61" height="2" fill="#C4C4C4" />
-            </svg>
-          </div>
-          <button>VIEW MENU</button>
-        </div>
-      </article>
-    </div>
-
     <main>
-      <section class="ourhistory">
+      <section class="ourhistory text">
         <div class="container">
-          <article class="history">
+          <div class="plasehistory">
             <h2><span>Наша</span> <span>История</span></h2>
             <p>
               Как и у любого другого самобытного места, у нас есть своя, особая
@@ -127,14 +82,14 @@
               добывать и готовить себе еду.
             </p>
             <div class="grid">
-              <div>93</div>
-              <div>206</div>
-              <div>71</div>
-              <div>Напитки</div>
-              <div>Еда</div>
-              <div>Закуски</div>
+              <span>93</span>
+              <span>206</span>
+              <span>71</span>
+              <span>Напитки</span>
+              <span>Еда</span>
+              <span>Закуски</span>
             </div>
-          </article>
+          </div>
 
           <div class="images">
             <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
@@ -178,7 +133,7 @@
               loading="lazy"
             />
           </div>
-          <div class="positive">
+          <div class="positive text">
             <div>
               <img
                 src="./images/dish.svg"
@@ -281,9 +236,9 @@
             />
           </div>
           <div class="description">
-            <p>Гамбургер мини -------------------------220 ₽</p>
-            <p>Гамбургер мини -------------------------220 ₽</p>
-            <p>Гамбургер мини -------------------------220 ₽</p>
+            <p>Гамбургер мини <span>-------------------------</span> 220 ₽</p>
+            <p>Гамбургер мини <span>-------------------------</span> 220 ₽</p>
+            <p>Гамбургер мини <span>-------------------------</span> 220 ₽</p>
           </div>
         </div>
       </section>
@@ -326,7 +281,7 @@
             <p class="top">RECOMMENDED</p>
           </div>
 
-          <div>
+          <div class="cardmenu">
             <img
               src="./images/burger.jpg"
               alt="бургер"
@@ -360,7 +315,7 @@
             <button>ЗАКАЗАТЬ</button>
           </div>
 
-          <div>
+          <div class="cardmenu">
             <img
               src="./images/burger.jpg"
               alt="бургер"
@@ -395,7 +350,8 @@
           </div>
         </div>
       </section>
-
+<!-- 
+      Отзыв  -->
       <article class="guest">
         <div class="container">
           <p>
@@ -417,10 +373,13 @@
         </div>
       </article>
 
+      <!-- Галерея блюд  -->
+
       <section class="gallery">
         <h2><span>Галерея</span> <span>Блюд</span></h2>
         <div class="container">
           <img
+            class="glass"
             src="./images/glass.jpg"
             alt="бокалы на столе"
             title="красиивые бокалы"
@@ -461,6 +420,7 @@
             loading="lazy"
           />
           <img
+          class="glass"
             src="./images/glass.jpg"
             alt="бокалы на столе"
             title="красиивые бокалы"
@@ -470,6 +430,8 @@
           />
         </div>
       </section>
+
+      <!-- ПОВАРА  -->
 
       <section class="cooks">
         <h2><span>Наши</span> <span>Повара</span></h2>
@@ -510,16 +472,18 @@
         </div>
       </section>
 
+      <!-- БРОНЬ -->
+
       <section class="reservation">
         <div class="container">
           <h2><span>Забронировать </span><span>стол</span></h2>
 
-          <form class="form">
+          <form class="form" method="get" >
             <label>Ваше имя</label>
             <input type="text" />
 
             <label>Номер телефона</label>
-            <input type="text" />
+            <input type="text" value="+375-"/>
 
             <label>Сообщение</label>
             <textarea></textarea>
@@ -575,7 +539,7 @@
         </ul>
         <div class="contacts"> 
           <p>г. Минск, ул. Ленина, 1/3, <br>Ресупиблика Беларусь, 233043</p>
-          <p>Телефон <a href="tel:+375449675643">+375449675643</a><a href="mailto:bestfood@mail.ru">bestfood@mail.ru</a></p>
+          <p>Телефон <a href="tel:+375449675643">+375449675643</a><br><a href="mailto:bestfood@mail.ru">bestfood@mail.ru</a></p>
         </div>
       </div>
     </footer>
